@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introdução ao Bootstrap</title>
+    <title>Landing Page</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
 
@@ -33,31 +33,40 @@
     </nav>
 
     <!--section Home-->
-    <selection id="home" class="d-flex">
+    <section id="home" class="d-flex">
         <div class="container">
+            <h1>Página Inicial</h1>
+            <p>Exemplo de Landing Page</p>
+            <a href="#sobre" class="btn btn-primary scroll-btn">Sobre a empresa</a>
+        </div>
+    </section>
+
+    <!--section Sobre-->
+    <section id="sobre" class="d-flex bg-light">
+        <div class="container text-center">
             <h1>Sobre a empresa</h1>
             <p>A empresa é...</p>
-            <a href="#contato" class="btn btn-primary scroll-btn">Sobre a empresa</a>
+            <a href="#contato" class="btn btn-success scroll-btn">Fale Conosco</a>
         </div>
-    </selection>
+    </section>
 
     <!--section Contato-->
-    <selection id="home" class="d-flex">
-        <div class="container">
-            <h1>Contato</h1>
-            <p>O contato da empresa é...</p>
-            <a href="#contato" class="btn btn-primary scroll-btn">Contatos</a>
+    <section id="contato" class="d-flex bg-light">
+        <div class="container text-center">
+            <h1>Fale Conosco</h1>
+            <p>Formulário aqui</p>
+            <a href="#localizacao" class="btn btn-danger scroll-btn">Localização</a>
         </div>
-    </selection>
+    </section>
 
     <!--section Localização-->
-    <selection id="home" class="d-flex">
-        <div class="container">
+    <section id="localizacao" class="d-flex bg-light">
+        <div class="container text-center">
             <h1>Localização</h1>
-            <p>A localização da empresa é...</p>
-            <a href="#contato" class="btn btn-primary scroll-btn">Localização</a>
+            <p>Mapa aqui</p>
+            <a href="#home" class="btn btn-danger scroll-btn">Página Inicial</a>
         </div>
-    </selection>
+    </section>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
